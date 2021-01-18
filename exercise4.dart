@@ -6,6 +6,14 @@
  * For example, 13 is a divisor of 26 because 26 / 13 has no remainder.
  */
 
+import 'dart:io';
+
 main(List<String> args) {
-  
+  print('Number:- ');
+  int number = int.parse(stdin.readLineSync());
+  for (int i = 1; i <= number; i++) {
+    if (number % i == 0) {
+      print(i);
+    }
+  }
 }
