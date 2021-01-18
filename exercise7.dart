@@ -7,5 +7,12 @@
  */
 
 main(List<String> args) {
-  
+  var a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+  var c = new List();
+  a.forEach((element) {
+    if ((element % 2) == 0) {
+      c.add(element);
+    }
+  });
+  print(c);
 }
